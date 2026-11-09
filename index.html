@@ -19,7 +19,7 @@
     <video id="intro-video" muted playsinline autoplay preload="auto">
       <source src="intro.mp4" type="video/mp4">
     </video>
-    <button id="play-intro" type="button" hidden>▶ Toca para ver la intro</button>
+    <button id="play-intro" type="button" hidden>▶️ Toca para ver la intro</button>
     <button id="skip-intro" type="button" aria-label="Saltar introducción">
       Saltar Intro
       <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="5 4 15 12 5 20 5 4"/><line x1="19" y1="5" x2="19" y2="19"/></svg>
@@ -34,6 +34,39 @@
     <div id="offline-badge" class="offline-badge" hidden>
       Sin conexión: tus datos se guardarán y se enviarán automáticamente.
     </div>
+
+    <div class="layout">
+
+    <h2 class="sponsors-heading">Con el respaldo de nuestros patrocinadores</h2>
+
+    <!-- ============ PATROCINADORES · COLUMNA IZQUIERDA ============ -->
+    <aside class="sponsors sponsors-left" aria-label="Patrocinadores">
+
+      <article class="sponsor">
+        <div class="sponsor-logo">
+          <img src="logos/gonper.png" alt="" loading="lazy" onerror="this.parentElement.classList.add('no-logo')">
+          <span class="sponsor-wordmark" aria-hidden="true">Gonper Librerías</span>
+        </div>
+        <h3 class="sr-only">Gonper Librerías</h3>
+        <p class="sponsor-label">Productos que distribuye en Nicaragua</p>
+        <ul class="chips">
+          <li>Paper Mate</li>
+          <li>Sharpie</li>
+          <li>Mongol</li>
+          <li>Prismacolor</li>
+          <li>Pinturas</li>
+          <li>Ampo</li>
+          <li>Barrilito</li>
+          <li>Y-Plus</li>
+          <li>Casio</li>
+          <li>Papel kraft</li>
+          <li>Staedtler</li>
+          <li>Pelikan</li>
+          <li>Pointer</li>
+        </ul>
+      </article>
+
+    </aside>
 
     <section class="card" id="form-card">
       <div class="banner-wrap">
@@ -93,9 +126,10 @@
 
       <footer class="card-footer">© <span id="year"></span> Tecno Rivas · Todos los derechos reservados</footer>
     </section>
-  </main>
 
-  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js"></script>
-  <script src="script.js"></script>
-</body>
-</html>
+    <!-- ============ PATROCINADORES · COLUMNA DERECHA ============ -->
+  
+    </aside>
+
+    </div><!-- /.layout -->
+  </main
