@@ -416,3 +416,22 @@ $("new-entry").addEventListener("click", () => {
   $("form-view").hidden = false;
   fields.cedula.focus();
 });
+document.addEventListener("DOMContentLoaded", () => {
+    const overlay = document.getElementById("intro-overlay");
+    const video = document.getElementById("intro-video");
+    const skipButton = document.getElementById("skip-intro");
+
+    function cerrarIntro() {
+        overlay.style.display = "none";
+        document.body.style.overflow = "auto";
+    }
+
+    // Cuando termina el video
+    video.addEventListener("ended", cerrarIntro);
+
+    // Cuando presionan Saltar Intro
+    skipButton.addEventListener("click", cerrarIntro);
+
+    // Si ocurre un error con el video
+    video.addEventListener("error", cerrarIntro);
+});
